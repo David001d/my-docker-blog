@@ -2,25 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>David Hustlers Blog</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlpineGuard | The Future of Hiking</title>
+    <style>
+        :root {
+            --alpine-blue: #0ea5e9;
+            --slate: #0f172a;
+            --silver: #cbd5e1;
+        }
+        body { font-family: 'Inter', sans-serif; background: var(--slate); color: white; margin: 0; line-height: 1.6; }
+        .hero { background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80'); 
+                background-size: cover; padding: 100px 20px; text-align: center; border-bottom: 4px solid var(--alpine-blue); }
+        .container { max-width: 800px; margin: -50px auto 50px; padding: 20px; }
+        .content-card { background: #1e293b; padding: 40px; border-radius: 15px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5); border: 1px solid #334155; }
+        h1 { font-size: 2.5rem; margin: 0; }
+        h2 { color: var(--alpine-blue); border-left: 4px solid var(--alpine-blue); padding-left: 15px; margin-top: 30px; }
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+        .feature { background: #0f172a; padding: 15px; border-radius: 10px; border: 1px solid #334155; }
+        .badge { background: var(--alpine-blue); color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; text-transform: uppercase; font-weight: bold; }
+        footer { text-align: center; color: #64748b; padding: 20px; font-size: 0.9rem; }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>DevOps Journey</h1>
-            <p>Built with Docker & Linux</p>
-        </div>
-    </header>
+    <div class="hero">
+        <span class="badge">Innovation Spotlight</span>
+        <h1>Safety in Every Step</h1>
+        <p>The Smart Hiking Staff & Mountain Safety</p>
+    </div>
 
     <div class="container">
-        <article>
-            <span class="badge">Live Deployment</span>
-            <h2>Automated CI/CD with GitHub Actions</h2>
-            <p>This blog updates itself every time I push code. No manual server work required!</p>
-            <hr>
-            <p><em>Latest Update: Design Refreshed.</em></p>
-        </article>
+        <div class="content-card">
+            <p>The wooden hiking stick has been a part of European culture for centuries, but in the era of IoT, we have transformed this classic tool with a <strong>digital pulse</strong>.</p>
+            
+            <p>The <strong>AlpineGuard System</strong> identifies "impact-followed-by-immobility" events—the typical fall signature—using ultra-accurate accelerometers and heart-rate monitors.</p>
+
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>The Golden Hour</h3>
+                    <p>In inaccessible areas, communication delay is a matter of life and death.</p>
+                </div>
+                <div class="feature">
+                    <h3>No Cell Service?</h3>
+                    <p>Hybrid LTE-M and Satellite/LoRaWAN connectivity keeps you on the grid.</p>
+                </div>
+            </div>
+
+            <h2>A DevOps Mindset</h2>
+            <p>Since this software affects lives, we adopt <strong>CI/CD automation</strong> to run millions of "fall simulations" in code before any update reaches the device.</p>
+        </div>
     </div>
+
+    <footer>&copy; 2025 AlpineGuard IoT Systems</footer>
 </body>
 </html>
